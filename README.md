@@ -147,7 +147,6 @@ unzip images.zip
 ```
 python train.py --epochs 10  --batch_size 5 --cuda
 ```
-Parameters :
 
 1. epochs : number of epochs to train the model on, default 10 
 2. batch_size : batch size for training, default 5
