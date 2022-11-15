@@ -120,9 +120,27 @@ Accuracy : Since it is a multi-class classification problem i have picked Accura
 
 ##### Create a virtual Environemnet (recommended) 
 
+I personally coded and tested this code on google colab (free GPU for limited time). However, if you are running this on your own system, it's easier to build a virutal environment to install your dependencies.
+
+```
+python3 -m venv <name_of_virtualenv>
+```
+
 ##### Install dependencies 
 
+```
+pip install -r requirements.txt
+```
+
 ##### Unzip the images folder 
+
+
+```
+cd data 
+unzip images.zip
+```
+
+
 
 ##### Train 
 
@@ -138,7 +156,19 @@ Parameters :
 ##### Inference
 
 ```
-python inference.py --image_path "inference_images/test1.jpg
+python inference.py --image_path "inference_images/test1.jpg --model_path "models/model.pth"
 ```
+1. image_path : path to image for inference
+2. model_path : path to model (.pth file) to run inference on
 
 ### Future Scope / Improvements
+
+Ideally, given more time I would make the following modifications :
+
+1. Larger dataset : collect more data or use data augmentation techniques to increase the size of the dataset 
+
+2. Freeze Layers : analyse which layers need to be trained / fine-tuned and train only those 
+
+3. More low level control : make it possible to change loss functions, learing rates etc.
+
+4. Experiment with other pre-trained models to find the best model for this task 

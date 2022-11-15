@@ -46,7 +46,6 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Training Script for Model')
     
     parser.add_argument("--image_path", help="path to image for inference")
-    parser.add_argument("--cuda", help="if passed inference will be on GPU", action='store_true')
     parser.add_argument("--model_path", help="path to .pth model for inference")
     args = parser.parse_args()
     image_path = args.image_path
