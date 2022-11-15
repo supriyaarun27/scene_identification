@@ -169,6 +169,6 @@ Ideally, given more time I would make the following modifications :
 
 2. Freeze Layers : analyse which layers need to be trained / fine-tuned and train only those 
 
-3. More low level control : make it possible to change loss functions, learing rates etc.
+3. More low level control : make it possible to change loss functions, learning rates etc.
 
 4. Experiment with other pre-trained models to find the best model for this task 
